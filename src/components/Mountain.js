@@ -1,0 +1,33 @@
+import React from "react";
+import "../styles/Highlights.css";
+import { MountainImages } from "./ImageLinks";
+
+const Mountain = () => {
+	return (
+		<>
+			<div className="Highlights_container">
+				<p className="highlight">Highlights</p>
+				<div className="cards">
+					{MountainImages.map((data, idx) => (
+						<div className="card" key={idx}>
+							<img
+								className="card_images"
+								src={data.img_src}
+								alt="BMX Images"
+							/>
+							<div className="card_info">
+								<p className="text">{data.text}</p>
+								<div className="labels">
+									<p className="label1">{data.label1}</p>
+									<p className="label2">{data.label2}</p>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</>
+	);
+};
+
+export default Mountain;

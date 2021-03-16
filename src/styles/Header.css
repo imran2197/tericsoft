@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header_container{
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid black
+}
+
+img{
+    height: 100px;
+    margin: 20px;
+}
+.star{
+    color: #bfbfbf;
+    height: 100px;
+}
